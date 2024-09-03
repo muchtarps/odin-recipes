@@ -4,10 +4,13 @@
 }
 .title {
     font-family: 'Garamond', Georgia, serif;
+}
+.border{
     text-align: center;
-    outline: violet;
-    border-radius: 2em;
+    border-style: solid;
+    border-radius: 0.5em;
 }
 ul {
-    list-style-type: none;
+    list-style: none;
+    padding-left: 0;
 }
