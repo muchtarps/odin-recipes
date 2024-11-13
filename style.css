@@ -11,12 +11,27 @@
     border-style: solid;
     border-radius: 0.5em;
     padding: 0.5em;
-    margin: 0.5em;
+    margin: 0.5em auto;
+    max-width: 45em;
+    box-sizing: border-box;
 }
 ul {
-    list-style: none;
-    padding-left: 0;
-}
+    list-style-type: none; /* Remove the default disc */
+    padding-left: 20px; /* Add some padding for the custom bullet */
+  }
+  
+  ul li::before {
+    content: "⏵"; /* Create a custom bullet */
+    font-size: 0.8em; /* Adjust size to be smaller than the font */
+    color: black; /* Set bullet color */
+    margin-right: 8px; /* Add some space between bullet and text */
+    display: inline-block;
+    vertical-align: middle;
+  }
+  li:hover{
+    background-color: aliceblue;
+  }
+  
 img {
     width: 100%;
     height: 15rem;
